@@ -9,3 +9,49 @@ html {
 body{
 	margin: 0;
 }
+
+/*HEADER STYLING starts*/
+.hidden{
+  display:none;
+}
+header  ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+header{
+/*   border: 3px solid goldenrod; */
+  display:grid;
+  grid-auto-flow:column;
+  grid-template-columns: 1fr 10fr;
+}
+.nav{
+  display:grid;
+  grid-auto-flow:column;
+  width:100%;
+  grid-template-columns: 15fr 3fr;
+}
+.nav__menu{
+  width:90%;
+  justify-self:center;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+.nav__CTA{
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+/* Mobile Styling */
+@media only screen and (max-width: 600px){
+  .nav{
+    display:none;
+  }
+  .hamburger{
+    display:block;
+    justify-self:flex-end;
+    align-self:center;
+  }
+}
+/*HEADER STYLING ends*/
