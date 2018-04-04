@@ -70,3 +70,11 @@ header{
 }
 
 /*FOOTER NAVIGATION STYLING ends*/
+
+/*FOOTER COPYRIGHT SECTION starts*/
+.footer__ender{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+}
+/*FOOTER COPYRIGHT SECTION ends*/
