@@ -66,6 +66,23 @@ header{
   width:78%;
 }
 
+.product-description{
+  background-color:#1D2833;
+  color:#fff;
+  display:flex;
+}
+.description-col img{
+  width:80px;
+}
+.product-description .description-col:nth-child(2) img{
+  width:140px;
+}
+.description-col{
+  text-align:center;
+}
+.description-col li{
+  text-align:left;
+}
 /*PRODUCT DESCRIPTION STYLING ends*/
 
 /*FOOTER NAVIGATION STYLING starts*/
