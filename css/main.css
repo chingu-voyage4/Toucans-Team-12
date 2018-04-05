@@ -56,6 +56,17 @@ header{
 }
 /*HEADER STYLING ends*/
 
+/*PRODUCT DESCRIPTION STYLING starts*/
+.atomist-workflow{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.atomist-workflow img{
+  width:78%;
+}
+
+/*PRODUCT DESCRIPTION STYLING ends*/
 
 /*FOOTER NAVIGATION STYLING starts*/
 .footer__nav__container{
