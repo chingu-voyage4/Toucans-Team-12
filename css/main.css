@@ -99,10 +99,18 @@ header{
 
 /*FOOTER NAVIGATION STYLING ends*/
 
-/*FOOTER COPYRIGHT SECTION starts*/
+/*FOOTER SIGNUP STYLING starts*/
+.footer__signup{
+  width:50%;
+  margin:auto;
+  text-align:center;
+}
+/*FOOTER SIGNUP STYLING ends*/
+
+/*FOOTER COPYRIGHT STYLING starts*/
 .footer__ender{
   display:flex;
   flex-direction:column;
   text-align:center;
 }
-/*FOOTER COPYRIGHT SECTION ends*/
+/*FOOTER COPYRIGHT STYLING ends*/
