@@ -149,4 +149,17 @@ section.testimonials{
   justify-content:center;
   align-items:center;
 }
+.slider__links{
+  display:flex;
+  justify-content:center;
+}
+.slider__link__direct{
+  margin:10px;
+  display:inline-block;
+  width:10px;
+  height:10px;
+  background:#000;
+  border-radius:50%;
+  cursor:pointer;
+}
 /*TESTIMONIAL SECTION STYLING ends*/
