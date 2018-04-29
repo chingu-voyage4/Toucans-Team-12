@@ -145,22 +145,19 @@
       </div>
       <div class="code__samples">
         <div class="code__sample1">
-          <code>
-            @CommandHandler("Kotlin Spring 5 generator", "Generate a new spring Kotlin project")
+          <pre class="prettyprint lang-java">
+@CommandHandler("Kotlin Spring 5 generator", "Generate a new spring Kotlin project")
 export class KotlinSpring5 extends JavaSeed {
-
-    public projectEditor(ctx: HandlerContext, params: this): ProjectEditor {
+  public projectEditor(ctx: HandlerContext, params: this): ProjectEditor {
         return transformSeed;
     }
-
 }
-          </code>
+          </pre>
         </div>
         <div class="code__sample2">
-          <code>
-            @CommandHandler("Upgrade versions of Spring Boot across an org", "upgrade spring boot version")
+          <pre class="prettyprint lang-java">
+@CommandHandler("Upgrade versions of Spring Boot across an org", "upgrade spring boot version")
 export class SpringBootVersionUpgrade extends EditorCommandSupport {
-
     @Secret(Secrets.userToken(["repo", "user"]))
     protected githubToken;
 
@@ -171,24 +168,22 @@ export class SpringBootVersionUpgrade extends EditorCommandSupport {
         validInput: "Semantic version",
         required: false,
     })
-          </code>
+          </pre>
         </div>
         <div class="code__sample3">
-          <code>
-            @CommandHandler("Query Stack Overflow", "search so")
+          <pre class="prettyprint lang-java">
+@CommandHandler("Query Stack Overflow", "search so")
 @Tags("stack-overflow")
 export class SearchStackOverflow implements HandleCommand {
-
     @Parameter({ description: "your search query", pattern: /^.*$/ })
     public q: string;
-
     public handle(ctx: HandlerContext): Promise {
         return axios.get(`${apiSearchUrl}${encodeURIComponent(this.q)}`)
             .then(res => this.handleResult(res, this.q))
             .then(msg => return ctx.messageClient.respond(msg) });
     }
 }
-          </code>
+          </pre>
         </div>
       </div>
     </section>
@@ -230,7 +225,8 @@ export class SearchStackOverflow implements HandleCommand {
   <div class="fixed">
     <!--Let's figure out weather or not to make it interactable later-->
   </div>
-
+  
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
