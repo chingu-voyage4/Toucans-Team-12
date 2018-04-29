@@ -134,16 +134,62 @@
     
     <!--CODE SAMPLE SECTION BUILT BY @juzQrios-->
     <section class="code">
-      <div class="code__header"></div>
+      <div class="code__header">
+        <div class="code__title">SIMPLE, POWERFUL, OPEN SOURCE AUTOMATION API</div>
+        <div class="code__subtitle">Automate your development process, increase visibility.</div>
+      </div>
       <div class="code__selectors">
-        <div class="code__selector1"></div>
-        <div class="code__selector2"></div>
-        <div class="code__selector3"></div>
+        <div class="code__selector1">Create Project</div>
+        <div class="code__selector2">Update Dependencies</div>
+        <div class="code__selector3">Bot Command</div>
       </div>
       <div class="code__samples">
-        <div class="code__sample1"></div>
-        <div class="code__sample2"></div>
-        <div class="code__sample3"></div>
+        <div class="code__sample1">
+          <code>
+            @CommandHandler("Kotlin Spring 5 generator", "Generate a new spring Kotlin project")
+export class KotlinSpring5 extends JavaSeed {
+
+    public projectEditor(ctx: HandlerContext, params: this): ProjectEditor {
+        return transformSeed;
+    }
+
+}
+          </code>
+        </div>
+        <div class="code__sample2">
+          <code>
+            @CommandHandler("Upgrade versions of Spring Boot across an org", "upgrade spring boot version")
+export class SpringBootVersionUpgrade extends EditorCommandSupport {
+
+    @Secret(Secrets.userToken(["repo", "user"]))
+    protected githubToken;
+
+    @Parameter({
+        displayName: "Desired Spring Boot version",
+        description: "The desired Spring Boot version across these repos",
+        pattern: /^.+$/,
+        validInput: "Semantic version",
+        required: false,
+    })
+          </code>
+        </div>
+        <div class="code__sample3">
+          <code>
+            @CommandHandler("Query Stack Overflow", "search so")
+@Tags("stack-overflow")
+export class SearchStackOverflow implements HandleCommand {
+
+    @Parameter({ description: "your search query", pattern: /^.*$/ })
+    public q: string;
+
+    public handle(ctx: HandlerContext): Promise {
+        return axios.get(`${apiSearchUrl}${encodeURIComponent(this.q)}`)
+            .then(res => this.handleResult(res, this.q))
+            .then(msg => return ctx.messageClient.respond(msg) });
+    }
+}
+          </code>
+        </div>
       </div>
     </section>
 
