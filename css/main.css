@@ -114,3 +114,39 @@ header{
   text-align:center;
 }
 /*FOOTER COPYRIGHT STYLING ends*/
+
+/*TESTIMONIAL SECTION STYLING starts*/
+section.testimonials{
+  display:grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+.slider__links{
+  grid-column:1/-1;
+  height:50px;
+}
+.slider__container{
+  overflow:hidden;
+}
+.slider__view{
+  width:510%;
+  backface-visibility:hidden;
+  display:block;
+  position:relative;
+  transform:translateX(0px);
+  transition: all 0.5s;
+   /*left:900px; */
+}
+.slider__item{
+  float:left;
+  width:900px;
+  /*height:100%;*/
+}
+.slider__but{
+  cursor:pointer;
+}
+.slider__change{
+  display:grid;
+  justify-content:center;
+  align-items:center;
+}
+/*TESTIMONIAL SECTION STYLING ends*/
