@@ -163,3 +163,17 @@ section.testimonials{
   cursor:pointer;
 }
 /*TESTIMONIAL SECTION STYLING ends*/
+
+/*CODE SECTION starts*/
+.code__header{
+  text-align:center;
+}
+.code__selectors{
+  display:flex;
+  justify-content:center;
+  cursor:pointer;
+}
+.code__selectors>*{
+  padding:20px;
+}
+/*CODE SECTION ends*/
