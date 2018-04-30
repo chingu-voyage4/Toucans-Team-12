@@ -139,12 +139,12 @@
         <div class="code__subtitle">Automate your development process, increase visibility.</div>
       </div>
       <div class="code__selectors">
-        <div class="code__selector1">Create Project</div>
-        <div class="code__selector2">Update Dependencies</div>
-        <div class="code__selector3">Bot Command</div>
+        <div class="code__selector1 code__display" style="--ele:code1">Create Project</div>
+        <div class="code__selector2" style="--ele:code2">Update Dependencies</div>
+        <div class="code__selector3" style="--ele:code3">Bot Command</div>
       </div>
       <div class="code__samples">
-        <div class="code__sample1">
+        <div class="code__sample code1">
           <pre class="prettyprint lang-java">
 @CommandHandler("Kotlin Spring 5 generator", "Generate a new spring Kotlin project")
 export class KotlinSpring5 extends JavaSeed {
@@ -154,7 +154,7 @@ export class KotlinSpring5 extends JavaSeed {
 }
           </pre>
         </div>
-        <div class="code__sample2">
+        <div class="code__sample code2">
           <pre class="prettyprint lang-java">
 @CommandHandler("Upgrade versions of Spring Boot across an org", "upgrade spring boot version")
 export class SpringBootVersionUpgrade extends EditorCommandSupport {
@@ -170,7 +170,7 @@ export class SpringBootVersionUpgrade extends EditorCommandSupport {
     })
           </pre>
         </div>
-        <div class="code__sample3">
+        <div class="code__sample code3">
           <pre class="prettyprint lang-java">
 @CommandHandler("Query Stack Overflow", "search so")
 @Tags("stack-overflow")
