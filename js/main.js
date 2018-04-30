@@ -3,6 +3,10 @@ var next = document.querySelector('.slider__next');
 var view = document.querySelector('.slider__view');
 var prev = document.querySelector('.slider__prev');
 var sliderLinks = document.querySelectorAll('.slider__link__direct');
+var codeSelectors = document.querySelectorAll('.code__selectors>*');
+var z = 2;
+
+// Testimonials slider functionality
 next.addEventListener('click',function(){
     tr-=900;
     if(tr==-4500){
@@ -25,5 +29,17 @@ sliderLinks.forEach(function(directLink){
     directLink.addEventListener('click',function(){
         tr=offset;
         view.style.transform = "translateX("+tr+"px)";
+    });
+});
+
+// Code Sample - code display change 
+codeSelectors.forEach(function(codeSelector){
+    codeSelector.addEventListener('click',function(){
+        var toBeRemoved = document.querySelector('.code__display');
+        toBeRemoved.classList.remove("code__display");
+        codeSelector.classList.add("code__display");
+        var ele = codeSelector.style.getPropertyValue("--ele");
+        var codeBlock = document.querySelector(`.${ele}`);
+        codeBlock.style.setProperty("z-index",z++);
     });
 });
