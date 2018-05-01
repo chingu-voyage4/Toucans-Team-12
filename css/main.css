@@ -245,8 +245,20 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 
 /*BANNER STYLING starts*/
 .banner img{
-  height:100%;
-  width:100%;
+  width:1000px;
+  position:absolute;
+}
+section.banner{
+  display:flex;
+  height:650px;
+}
+.banner__left{
+  flex: 1;
+}
+.banner__right{
+  flex:1;
+  position:relative;
+  overflow:hidden;
 }
 
 /*BANNER STYLING ends*/
