@@ -1,0 +1,264 @@
+/*Universal Box Sizing with Inheritance  */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+	margin: 0;
+}
+
+/*HEADER STYLING starts*/
+.hidden{
+  display:none;
+}
+header  ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+header{
+/*   border: 3px solid goldenrod; */
+  display:grid;
+  grid-auto-flow:column;
+  grid-template-columns: 1fr 10fr;
+}
+.nav{
+  display:grid;
+  grid-auto-flow:column;
+  width:100%;
+  grid-template-columns: 15fr 3fr;
+}
+.nav__menu{
+  width:90%;
+  justify-self:center;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+.nav__CTA{
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+/* Mobile Styling */
+@media only screen and (max-width: 600px){
+  .nav{
+    display:none;
+  }
+  .hamburger{
+    display:block;
+    justify-self:flex-end;
+    align-self:center;
+  }
+}
+/*HEADER STYLING ends*/
+
+/*PRODUCT DESCRIPTION STYLING starts*/
+.atomist-workflow{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.atomist-workflow img{
+  width:78%;
+}
+
+.product-description{
+  background-color:#1D2833;
+  color:#fff;
+  display:flex;
+}
+.description-col img{
+  width:80px;
+}
+.product-description .description-col:nth-child(2) img{
+  width:140px;
+}
+.description-col{
+  text-align:center;
+}
+.description-col li{
+  text-align:left;
+}
+/*PRODUCT DESCRIPTION STYLING ends*/
+
+/*FOOTER NAVIGATION STYLING starts*/
+.footer__nav__container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(175px,1fr));
+  max-width:900px;
+  margin:auto;
+}
+.footer__nav__item{
+  padding:2em;
+  text-align:center;
+}
+
+/*FOOTER NAVIGATION STYLING ends*/
+
+/*FOOTER SIGNUP STYLING starts*/
+.footer__signup{
+  width:50%;
+  margin:auto;
+  text-align:center;
+}
+/*FOOTER SIGNUP STYLING ends*/
+
+/*FOOTER COPYRIGHT STYLING starts*/
+.footer__ender{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+}
+/*FOOTER COPYRIGHT STYLING ends*/
+
+/*TESTIMONIAL SECTION STYLING starts*/
+section.testimonials{
+  display:grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+.slider__links{
+  grid-column:1/-1;
+  height:50px;
+}
+.slider__container{
+  overflow:hidden;
+}
+.slider__view{
+  width:510%;
+  backface-visibility:hidden;
+  display:block;
+  position:relative;
+  transform:translateX(0px);
+  transition: all 0.5s;
+   /*left:900px; */
+}
+.slider__item{
+  float:left;
+  width:900px;
+  /*height:100%;*/
+}
+.slider__but{
+  cursor:pointer;
+}
+.slider__change{
+  display:grid;
+  justify-content:center;
+  align-items:center;
+}
+.slider__links{
+  display:flex;
+  justify-content:center;
+}
+.slider__link__direct{
+  margin:10px;
+  display:inline-block;
+  width:10px;
+  height:10px;
+  background:#000;
+  border-radius:50%;
+  cursor:pointer;
+}
+/*TESTIMONIAL SECTION STYLING ends*/
+
+/*CODE SECTION starts*/
+.code__header{
+  text-align:center;
+}
+.code__selectors{
+  display:flex;
+  justify-content:center;
+  cursor:pointer;
+  margin:0;
+}
+.code__selectors>*{
+  padding:20px;
+  margin:0;
+}
+.code__samples{
+  position:relative;
+  height:250px;
+  width:900px;
+  margin:0 auto;
+  padding:0;
+}
+.code__sample{
+  position:absolute;
+  width:100%;
+  height:250px;
+  z-index:0;
+}
+pre.prettyprint{
+  border:none !important;
+  margin:0;
+  padding:25px !important;
+  height:100%;
+}
+.code1{
+  z-index:1;
+}
+.code__display{
+  color:#fff;
+  background:#333333;
+}
+/*CODE SECTION ends*/
+
+/*PRETTYPRINT THEME starts*/
+/* desert scheme ported from vim to google prettify */
+pre.prettyprint { display: block; background-color: #333 }
+pre .nocode { background-color: none; color: #000 }
+pre .str { color: #ffa0a0 } /* string  - pink */
+pre .kwd { color: #f0e68c; font-weight: bold }
+pre .com { color: #87ceeb } /* comment - skyblue */
+pre .typ { color: #98fb98 } /* type    - lightgreen */
+pre .lit { color: #cd5c5c } /* literal - darkred */
+pre .pun { color: #fff }    /* punctuation */
+pre .pln { color: #fff }    /* plaintext */
+pre .tag { color: #f0e68c; font-weight: bold } /* html/xml tag    - lightyellow */
+pre .atn { color: #bdb76b; font-weight: bold } /* attribute name  - khaki */
+pre .atv { color: #ffa0a0 } /* attribute value - pink */
+pre .dec { color: #98fb98 } /* decimal         - lightgreen */
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE } /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
+/* Alternate shading for lines */
+li.L1,li.L3,li.L5,li.L7,li.L9 { }
+
+@media print {
+  pre.prettyprint { background-color: none }
+  pre .str, code .str { color: #060 }
+  pre .kwd, code .kwd { color: #006; font-weight: bold }
+  pre .com, code .com { color: #600; font-style: italic }
+  pre .typ, code .typ { color: #404; font-weight: bold }
+  pre .lit, code .lit { color: #044 }
+  pre .pun, code .pun { color: #440 }
+  pre .pln, code .pln { color: #000 }
+  pre .tag, code .tag { color: #006; font-weight: bold }
+  pre .atn, code .atn { color: #404 }
+  pre .atv, code .atv { color: #060 }
+}
+/*PRETTYPRINT THEME ends*/
+
+/*BANNER STYLING starts*/
+.banner img{
+  width:1000px;
+  position:absolute;
+}
+section.banner{
+  display:flex;
+  height:650px;
+}
+.banner__left{
+  flex: 1;
+}
+.banner__right{
+  flex:1;
+  position:relative;
+  overflow:hidden;
+}
+
+/*BANNER STYLING ends*/
