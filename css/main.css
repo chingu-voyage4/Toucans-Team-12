@@ -242,3 +242,11 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
   pre .atv, code .atv { color: #060 }
 }
 /*PRETTYPRINT THEME ends*/
+
+/*BANNER STYLING starts*/
+.banner img{
+  height:100%;
+  width:100%;
+}
+
+/*BANNER STYLING ends*/
