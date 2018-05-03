@@ -40,7 +40,7 @@ a{
 header{
   position:relative;
   z-index:1;
-  padding:28px;
+  padding:35px;
   text-transform:uppercase;
   letter-spacing:2px;
 }
@@ -71,7 +71,7 @@ header{
   font-weight:800;
   font-size: 0.95em;
 }
-.nav__menu a:hover{
+.nav__menu a:hover, .nav__sign-in a:hover{
   color:#69C398;
   transition: all 0.3s;
 }
@@ -132,6 +132,7 @@ header{
   background-color:#1D2833;
   color:#fff;
   display:flex;
+  margin-top:75px;
 }
 .description-col img{
   width:80px;
@@ -319,6 +320,10 @@ section.banner{
   height:650px;
 }
 .banner__left{
+  padding-left:100px;
+  padding-top: 50px;
+  font-family: sans-serif;
+  text-transform: uppercase;
   flex: 1;
 }
 .banner__right{
@@ -326,7 +331,24 @@ section.banner{
   position:relative;
   overflow:hidden;
 }
-
+.banner__left h1{
+  font-weight: 200;
+  letter-spacing: 4px;
+  font-size: 3.2em;
+  margin-bottom: 75px;
+}
+.button{
+  background:#347F7E;
+  color:#fff;
+  border-radius:5px;
+  padding:20px 40px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.cta{
+  background: #69C398 !important;
+}
 /*BANNER STYLING ends*/
 
 .container{
