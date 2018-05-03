@@ -1,4 +1,4 @@
 # Toucans-Team-12
 Voyage-4
 
-See [Wiki](https://github.com/chingu-voyage4/Toucans-Team-12/wiki)
+Please view the project webpage on a computer, it is completely unresponsive :p
