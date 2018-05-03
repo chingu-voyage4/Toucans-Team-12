@@ -12,7 +12,7 @@ body{
 /*Page specific styling*/
 div{
  color:white;
- font-family: Arial, Helvetica, sans-serif;
+ font-family: 'Varela Round', sans-serif;
 }
 pre.prettyprint{
   font-family: monospace;
@@ -32,6 +32,7 @@ a{
   height:100%;
   width:100%;
 }
+
 /*HEADER STYLING starts*/
 .hidden{
   display:none;
@@ -39,6 +40,9 @@ a{
 header{
   position:relative;
   z-index:1;
+  padding:28px;
+  text-transform:uppercase;
+  letter-spacing:2px;
 }
 header  ul{
   margin:0;
@@ -55,19 +59,46 @@ header{
   display:grid;
   grid-auto-flow:column;
   width:100%;
-  grid-template-columns: 15fr 3fr;
+  grid-template-columns: 15fr 4fr;
 }
 .nav__menu{
-  width:90%;
+  width:65%;
   justify-self:center;
   display:flex;
   justify-content: space-around;
   align-items:center;
+  margin:0 auto;
+  font-weight:800;
+  font-size: 0.95em;
+}
+.nav__menu a:hover{
+  color:#69C398;
+  transition: all 0.3s;
 }
 .nav__CTA{
   display:flex;
   justify-content: space-around;
   align-items:center;
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing:1px;
+}
+.nav__btn{
+  margin-left:10px;
+  color:#69C398;
+  border:2px solid #69C398;
+  border-radius:5px;
+  padding:10px 15px;
+  cursor:pointer;
+}
+.nav__btn:hover{
+  color:#fff;
+  background:#69C398;
+}
+.nav__sign-in{
+  font-weight:400;
+  letter-spacing:2px;
+  font-size: 0.8rem;
 }
 .logo>img{
   height:55px;
