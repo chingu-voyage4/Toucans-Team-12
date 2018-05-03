@@ -9,6 +9,18 @@ html {
 body{
 	margin: 0;
 }
+/*Page specific styling*/
+div{
+ color:white;
+ font-family: Arial, Helvetica, sans-serif;
+}
+pre.prettyprint{
+  font-family: monospace;
+}
+a{
+  all:unset;
+  cursor:pointer;
+}
 
 .bg-img{
   position:absolute;
