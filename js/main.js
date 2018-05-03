@@ -4,6 +4,7 @@ var view = document.querySelector('.slider__view');
 var prev = document.querySelector('.slider__prev');
 var sliderLinks = document.querySelectorAll('.slider__link__direct');
 var codeSelectors = document.querySelectorAll('.code__selectors>*');
+var test = document.querySelector('.testimonials');
 var z = 2;
 
 // Testimonials slider functionality

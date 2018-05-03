@@ -131,7 +131,7 @@ header{
 .product-description{
   padding:75px;
   font-family: sans-serif !important;
-  background-color:#1D2833;
+  background-color:#172330;
   color:#fff;
   display:flex;
   margin-top:75px;
@@ -211,10 +211,14 @@ header{
 .testimonials{
   display:grid;
   grid-template-columns: 1fr 4fr 1fr;
+  font-size: 19px;
+  font-family: sans-serif;
+  padding:50px 0;
 }
 .slider__links{
   grid-column:1/-1;
   height:50px;
+  margin-top: 50px;
 }
 .slider__container{
   overflow:hidden;
@@ -231,7 +235,18 @@ header{
 .slider__item{
   float:left;
   width:900px;
+  text-align: center;
   /*height:100%;*/
+}
+.slider__item .content{
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+.slider__item .author{
+  color:#AAAEBD;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 1px;
 }
 .slider__but{
   cursor:pointer;
@@ -248,11 +263,14 @@ header{
 .slider__link__direct{
   margin:10px;
   display:inline-block;
-  width:10px;
-  height:10px;
-  background:#000;
+  width:7px;
+  height:7px;
+  background:#66717F;
   border-radius:50%;
   cursor:pointer;
+}
+.slider__link__direct:hover{
+  background:#fff;
 }
 /*TESTIMONIAL SECTION STYLING ends*/
 
