@@ -10,9 +10,23 @@ body{
 	margin: 0;
 }
 
+.bg-img{
+  position:absolute;
+  /*top:0;*/
+  /*left:0;*/
+  /*z-index:-1;*/
+}
+.bg-img>img{
+  height:100%;
+  width:100%;
+}
 /*HEADER STYLING starts*/
 .hidden{
   display:none;
+}
+header{
+  position:relative;
+  z-index:1;
 }
 header  ul{
   margin:0;
@@ -43,6 +57,11 @@ header{
   justify-content: space-around;
   align-items:center;
 }
+.logo>img{
+  height:55px;
+  width:187px;
+}
+
 /* Mobile Styling */
 @media only screen and (max-width: 600px){
   .nav{
@@ -244,6 +263,10 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 /*PRETTYPRINT THEME ends*/
 
 /*BANNER STYLING starts*/
+.banner{
+  position:relative;
+  z-index:1;
+}
 .banner img{
   width:1000px;
   position:absolute;
@@ -262,3 +285,7 @@ section.banner{
 }
 
 /*BANNER STYLING ends*/
+
+.container{
+  background-color:#1D2A38;
+}
